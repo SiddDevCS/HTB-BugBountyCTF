@@ -1,12 +1,11 @@
-
----
 # Context
 
 NeoVault is a banking web application in Bug Bounty CTF where you can transfer funds.
 
-![[Pasted image 20250629133914.png]]
+![Image](image.png)
 
 This is what information the makers of this CTF provided:
+
 ###### NeoVault
 
 NeoVault is a trusted banking application that allows users to effortlessly transfer funds to one another and conveniently download their transaction history. We invite you to explore the application for any potential vulnerabilities and uncover the flag hidden within its depths.  
@@ -23,7 +22,7 @@ I tried to focus on the Bug Bounty Reports they provided, since in the last chal
 
 The first Bounty Report provided a lot of interesting information about MongoDB Object Id generation and prediction. I tried to focus on this image they provided:
 
-![[Pasted image 20250629134344.png]]
+![alt text](image-1.png)
 
 This is how MongoDB Object Id's are generated. In the article there is stated that the machine identifier will remain the same for as long as the database is still running on that machine.
 
@@ -68,7 +67,7 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NWVhNGRjM2FjNjVjNGNiYzU1ODQ5MyI
 
 The token can be found at inspect>application>cookies. But also when with GET requests:
 
-![[NeoVaultCTF1.png]]
+![alt text](image-2.png)
 
 # Where do I think the flag is:
 
@@ -382,11 +381,11 @@ Now with burp intrude I have changed the JWT tokens. I configured the payloads w
 
 Here is a overview:
 
-![[2025-06-28_11-07.png]]
+![alt text](2025-06-28_11-07.png)
 
 Intruder:
 
-![[404'sinburpintrude.png]]
+![alt text](image-4.png)
 
 ### Note: Now this was where I was stuck. I will update this write-up with the answer and what I should have done instead of this.
 
