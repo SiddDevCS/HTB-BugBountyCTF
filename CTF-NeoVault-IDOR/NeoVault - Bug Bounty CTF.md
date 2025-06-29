@@ -67,8 +67,6 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NWVhNGRjM2FjNjVjNGNiYzU1ODQ5MyI
 
 The token can be found at inspect>application>cookies. But also when with GET requests:
 
-![alt text](image-2.png)
-
 # Where do I think the flag is:
 
 It definitely has something to do with neo_system. But I can't seem to get any other information than what I currently have. I need to take a deeper look into the hint sources.
